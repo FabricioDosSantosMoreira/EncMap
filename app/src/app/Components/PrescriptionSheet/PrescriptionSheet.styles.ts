@@ -15,7 +15,6 @@ export const PrescriptionContainer = styled.div`
   width: 530px;
   height: 680px;
 
-
   background-color: #f16d1e;
   
   background-color: #adb4bd;
@@ -139,8 +138,6 @@ export const HeaderBannerIcon = styled(Image)<{$displaced: boolean}>`
 
   bottom: -24px;
   left: 12px;
-
-  
 
 
   height: 64px;
