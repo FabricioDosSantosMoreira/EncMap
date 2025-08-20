@@ -8,12 +8,12 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
 
-    user-select: none; 
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none; 
+    // user-select: none; 
+    // -webkit-user-select: none;
+    // -moz-user-select: none;
+    // -ms-user-select: none; 
 
-    -webkit-tap-highlight-color: transparent;
+    // -webkit-tap-highlight-color: transparent;
   }
 
   html {

@@ -1,7 +1,12 @@
 "use client";
 import React from "react";
 
-import { PrescriptionContainer, Header, ProductList, ProductCard, HeaderTitle, HeaderBanner, HeaderLogo, HeaderSpan, HeaderBannerIcon, PacientSpan, PacientIcon, PacientName, PacientIconStyles, PrescriptionContent, ProductSpan, ProductIcon, ProductName, ProductIconStyles } from "./PrescriptionSheet.styles";
+import { PrescriptionContainer, Header, ProductList, 
+  ProductCard, HeaderTitle, HeaderBanner, HeaderLogo, HeaderSpan, 
+  HeaderBannerIcon, PacientSpan, PacientIcon, PacientName, PacientIconStyles, 
+  PrescriptionContent, ProductSpan, ProductIcon, ProductName, ProductIconStyles, 
+  ProductWhyToUseContainer, ProductWhyToUse, WhyToUseList, WhyToUseIconStyles, 
+  WhyToUseIconStyleContainer} from "./PrescriptionSheet.styles";
 import { PrescriptionSheetProps } from "./PrescriptionSheet.types";
 import LogoAssociadas from '@/public/images/logo/logo-rede-associadas.png';
 
@@ -53,12 +58,24 @@ export default function PrescriptionSheet({ data }: PrescriptionSheetProps) {
               <ProductName $isNameLong={product.name.length > 56}>{product.name}</ProductName>
             </ProductSpan>
 
-
-            <ul>
+            <ProductWhyToUseContainer>
               {product.why_to_use.map((reason, rIdx) => (
-                <li key={rIdx}>{reason}</li>
+
+                <WhyToUseList>
+                  <WhyToUseIconStyleContainer>
+                    <WhyToUseIconStyles />
+                  </WhyToUseIconStyleContainer>
+                  
+                  <ProductWhyToUse key={rIdx}>{reason}</ProductWhyToUse>
+                </WhyToUseList>
               ))}
-            </ul>
+
+
+            </ProductWhyToUseContainer>
+         
+
+            <p style={{'marginTop': '45px'}}></p>
+
             <p><strong>How to use:</strong> {product.how_to_use}</p>
             {product.observation && (
               <p><strong>Observation:</strong> {product.observation}</p>

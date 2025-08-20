@@ -18,9 +18,7 @@ export const PrescriptionContainer = styled.div`
 
   background-color: #f16d1e;
   
-
   background-color: #adb4bd;
-
   border-radius: 12px;
 `;
 
@@ -34,6 +32,7 @@ export const Header = styled.div`
 
   width: 100%;
   height: 112px;
+
 
   background-color: #04bfad;
 
@@ -168,9 +167,9 @@ export const PrescriptionContent = styled.div`
   margin-left: 24px;
 
   height: calc(100% - 136px);
-  width: calc(100% - 24px - 36px);
-
+  width: calc(100% - 24px - 24px);
 `
+
 
 export const PacientSpan = styled.div`
   display: flex;
@@ -238,9 +237,8 @@ export const PacientName = styled.h2`
 export const ProductCard = styled.div`
   background: #fff;
 
-  
-  //padding-left: 6px;
   padding-top: 6px;
+  margin-top: 6px;
 `
 
 
@@ -248,7 +246,6 @@ export const ProductList = styled.div`
   display: flex;
   flex-direction: column;
 
-  gap: 8px;
   overflow-y: none;
 `;
 
@@ -319,4 +316,83 @@ export const ProductIconStyles = styled.div`
     border-bottom: 7px solid transparent;
     border-left: 7px solid #000; /* cor da seta */
   }
+`
+
+
+
+
+
+
+
+export const WhyToUseList = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: row;
+
+`
+
+
+
+export const WhyToUseIconStyleContainer = styled.div`
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  
+  width: 12px;
+  height: 12px;
+
+  margin-right: 2px;
+`
+
+export const WhyToUseIconStyles = styled.div`
+  position: absolute;
+  top: 0px;
+  left: 6px;
+
+  width: 2.5px;
+  height: 12px; 
+
+  background-color: #f16d1e;
+ 
+  transform: rotate(45deg);
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    left: -2.5px; 
+    bottom: -2.5px;
+
+    width: 2.5px;
+    height: 8px; 
+
+    transform: rotate(90deg);
+    background-color: #f16d1e;
+  }
+`
+
+
+
+
+export const ProductWhyToUseContainer = styled.div`
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+
+  margin-left: 56px;
+  margin-top: 2px;
+`
+
+
+export const ProductWhyToUse = styled.span`
+  font-size: 1rem;
+  color: #000000;
+
+  font-family: ${({ theme }) => theme.fonts.tilt_neon};
+
+  line-height: 16px;
 `
