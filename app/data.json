@@ -1,0 +1,40 @@
+[
+  {
+    "clientName": "John Doe",
+    "products": [
+      {
+        "name": "Polypodium Leucotomos 240mg + Pinus (Picnogenol) 150mg + Luteína 10mg",
+        "why_to_use": ["Boosts immunity", "Improves skin health"],
+        "how_to_use": "Take 1 tablet daily after breakfast.",
+        "observation": "Avoid taking on an empty stomach.",
+        "alert": "Do not exceed recommended dosage."
+      },
+      {
+        "name": "Omega-3 Capsules",
+        "why_to_use": ["Supports heart health", "Improves brain function"],
+        "how_to_use": "Take 2 capsules with lunch.",
+        "observation": "",
+        "alert": ""
+      }
+    ]
+  },
+  {
+    "clientName": "Jane Smith",
+    "products": [
+      {
+        "name": "Multivitamin",
+        "why_to_use": ["General health maintenance"],
+        "how_to_use": "Take 1 capsule daily with a meal.",
+        "observation": "",
+        "alert": ""
+      },
+      {
+        "name": "Magnesium",
+        "why_to_use": ["Relieves muscle cramps", "Supports bone health"],
+        "how_to_use": "Take 1 tablet before bed.",
+        "observation": "Best taken with water.",
+        "alert": ""
+      }
+    ]
+  }
+]
